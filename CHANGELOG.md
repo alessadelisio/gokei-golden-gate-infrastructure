@@ -9,6 +9,11 @@ The format is as follows:
 - `Fixed` for bug fixes.
 - `Removed` for removed features.
 
+## [1.0.0] - 2024-07-17
+### Added
+- IAM module to create the CI/CD Service Account for the website repository.
+- Adding breaking change `service_account_id` variable.
+
 ## [0.2.1] - 2024-07-17
 ### Fixed
 - Adding neccesary permission to execute the bash `apply` script.
