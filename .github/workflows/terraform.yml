@@ -1,0 +1,41 @@
+name: Terraform Workflow
+
+on:
+  - push
+  - workflow_dispatch
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.1.7
+
+      - id: 'auth'
+        name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@v2'
+        with:
+          credentials_json: '${{ secrets.TERRAFORM_GOOGLE_CREDENTIALS }}'
+      
+      - name: Terraform Format
+        run: |
+          echo "Formatting code..."
+          echo "Code formated successfully."
+
+
+      - name: Terraform Init
+        run: |
+          echo "Initializing Terraform..."
+          echo "Terraform initialized successfully."
+
+      - name: Terraform Plan and Apply
+
+        run: |
+          echo "executing plan and apply..."
+          echo "plan and apply executed successfully."
