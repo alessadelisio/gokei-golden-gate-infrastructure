@@ -9,6 +9,11 @@ The format is as follows:
 - `Fixed` for bug fixes.
 - `Removed` for removed features.
 
+## [2.0.0] - 2024-07-17
+### Added
+- Registry module to create the Artifact Registry repository.
+- Adding breaking change `gokei_registry` variable.
+
 ## [1.0.1] - 2024-07-17
 ### Fixed
 - Adding required API `iam.googleapis.com`.

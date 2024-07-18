@@ -34,6 +34,7 @@ jobs:
           TF_VAR_project_id: ${{ vars.project_id }}
           TF_VAR_region_name: ${{ vars.region_name }}
           TF_VAR_service_account_id: ${{ vars.service_account_id }}
+          TF_VAR_gokei_registry: ${{ vars.gokei_registry }}
 
         run: ./scripts/apply
       
