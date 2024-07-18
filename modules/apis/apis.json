@@ -1,4 +1,5 @@
 [
     "serviceusage.googleapis.com",
-    "cloudresourcemanager.googleapis.com"
+    "cloudresourcemanager.googleapis.com",
+    "iam.googleapis.com"
 ]

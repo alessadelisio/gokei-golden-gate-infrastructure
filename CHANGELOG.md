@@ -9,6 +9,10 @@ The format is as follows:
 - `Fixed` for bug fixes.
 - `Removed` for removed features.
 
+## [1.0.1] - 2024-07-17
+### Fixed
+- Adding required API `iam.googleapis.com`.
+
 ## [1.0.0] - 2024-07-17
 ### Added
 - IAM module to create the CI/CD Service Account for the website repository.
