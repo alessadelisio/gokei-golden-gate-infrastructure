@@ -9,6 +9,10 @@ The format is as follows:
 - `Fixed` for bug fixes.
 - `Removed` for removed features.
 
+## [2.0.2] - 2024-07-17
+### Fixed
+- Dummy commit to add the missing APIs.
+
 ## [2.0.1] - 2024-07-17
 ### Fixed
 - Adding required APIs.

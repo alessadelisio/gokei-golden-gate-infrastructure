@@ -1,7 +1,7 @@
 [
-    "serviceusage.googleapis.com",
+    "artifactregistry.googleapis.com",
     "cloudresourcemanager.googleapis.com",
     "iam.googleapis.com",
-    "artifactregistry.googleapis.com",
-    "run.googleapis.com"
+    "run.googleapis.com",
+    "serviceusage.googleapis.com"
 ]
