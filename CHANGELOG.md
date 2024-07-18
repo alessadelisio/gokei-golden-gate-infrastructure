@@ -9,6 +9,12 @@ The format is as follows:
 - `Fixed` for bug fixes.
 - `Removed` for removed features.
 
+## [0.2.0] - 2024-07-17
+### Added
+- APIs module to activate the necessary resources in the GCP project.
+- Modifying the CI/CD pipeline to execute a real `terraform apply`.
+
+
 ## [0.1.0] - 2024-07-17
 ### Added
 - Initial release of the project.

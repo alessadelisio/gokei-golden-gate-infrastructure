@@ -24,18 +24,24 @@ jobs:
           credentials_json: '${{ secrets.TERRAFORM_GOOGLE_CREDENTIALS }}'
       
       - name: Terraform Format
-        run: |
-          echo "Formatting code..."
-          echo "Code formated successfully."
-
+        run: terraform fmt
 
       - name: Terraform Init
-        run: |
-          echo "Initializing Terraform..."
-          echo "Terraform initialized successfully."
+        run: terraform init
 
       - name: Terraform Plan and Apply
+        env:
+          TF_VAR_project_id: ${{ vars.project_id }}
+          TF_VAR_region_name: ${{ vars.region_name }}
 
+        run: ./scripts/apply
+      
+      - name: Generate Output
+        id: terraform-output
         run: |
-          echo "executing plan and apply..."
-          echo "plan and apply executed successfully."
+          terraform output -json > outputs.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: terraform_output
+          path: ./outputs.json
