@@ -9,6 +9,10 @@ The format is as follows:
 - `Fixed` for bug fixes.
 - `Removed` for removed features.
 
+## [0.2.1] - 2024-07-17
+### Fixed
+- Adding neccesary permission to execute the bash `apply` script.
+
 ## [0.2.0] - 2024-07-17
 ### Added
 - APIs module to activate the necessary resources in the GCP project.
